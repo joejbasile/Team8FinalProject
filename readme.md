@@ -1,6 +1,6 @@
 # Prequesites 
 
-### install dokcer desktop
+### install docker desktop
 ### install kubectl
 ### install minikube
 
