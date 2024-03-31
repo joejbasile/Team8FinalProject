@@ -1,3 +1,5 @@
+# Prequesites 
+
 ### install dokcer desktop
 ### install kubectl
 ### install minikube
@@ -22,9 +24,9 @@ kubectl get deployments
 
 kubectl get pods
 
-kubectl get logs <pod-name>
+kubectl get logs `pod-name`
 
-kubectl exec -it <pod-name> -- sh
+kubectl exec -it `pod-name` -- sh
 
     ls
 
@@ -42,6 +44,6 @@ minikube stop
 
 docker system prune
 
-docker rmi <image-name:image-tag>
+docker rmi `image-name:image-tag`
 
 docker images
