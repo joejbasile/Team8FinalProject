@@ -16,12 +16,12 @@ docker push jjbasile/team8
 
 kubectl get node minikube -o jsonpath='{.status.capacity}'
 
-minikube start --memory 8192 --cpus 6
+minikube start --memory 6144 --cpus 6
 
 OR
 
-    minikube config set memory 8192
-    minikube config set cpus 4
+    minikube config set memory 6144
+    minikube config set cpus 6
     minikube start
 
 kubectl create -f pod-definition.yml
