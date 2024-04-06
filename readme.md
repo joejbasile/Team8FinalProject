@@ -14,7 +14,15 @@ docker push jjbasile/team8
 
 # Use the docker image in kubernetes
 
-minikube start
+kubectl get node minikube -o jsonpath='{.status.capacity}'
+
+minikube start --memory 8192 --cpus 6
+
+OR
+
+    minikube config set memory 8192
+    minikube config set cpus 4
+    minikube start
 
 kubectl create -f pod-definition.yml
 
@@ -41,6 +49,10 @@ kubectl exec -it `pod-name` -- sh
 kubectl delete deployment team8-deployment
 
 minikube stop
+
+minikube profile list
+
+minikube delete --profile minikube
 
 docker system prune
 
