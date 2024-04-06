@@ -34,7 +34,7 @@ class Main {
                     Date date1 = new Date();
                     String startTimestamp = sdf.format(date1);
                     System.out.println("\nStart time: " + startTimestamp);
-                    out.println("Start time: " + startTimestamp);
+                    out.println("\nStart time: " + startTimestamp);
 
                     // Function call, burn resources, spend time
                     memory = Main.addNumbers(N, 0.0);
@@ -43,18 +43,18 @@ class Main {
                     Date date2 = new Date();
                     String endTimestamp = sdf.format(date2);
                     System.out.println("\nEnd time: " + endTimestamp);
-                    out.println("End time: " + endTimestamp);
+                    out.println("\nEnd time: " + endTimestamp);
 
                     // Difference between start and end times
                     DifferenceOutput differenceOutput = findDifference(startTimestamp, endTimestamp);
                     long difference = differenceOutput.getMilliseconds();
-                    System.out.println("Duration in milliseconds: " + difference);
-                    out.println("Duration in milliseconds: " + difference);
-                    out.println("Duration: " + differenceOutput.getText());
+                    System.out.println("\nDuration in milliseconds: " + difference);
+                    out.println("\nDuration in milliseconds: " + difference);
+                    out.println("\nDuration: " + differenceOutput.getText());
 
                     double memoryPercentUsed = memory / Runtime.getRuntime().totalMemory();
-                    System.out.println("Max percent of all memory used at an instance: " + memoryPercentUsed);
-                    out.println("Max percent of all memory used at an instant: " + memoryPercentUsed);
+                    System.out.println("\nMax percent of all memory used at an instance: " + memoryPercentUsed);
+                    out.println("\nMax percent of all memory used at an instant: " + memoryPercentUsed);
 
                     out.flush();
                     out.close();
