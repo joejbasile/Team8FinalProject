@@ -32,7 +32,7 @@ kubectl get deployments
 
 kubectl get pods
 
-kubectl get logs `pod-name`
+kubectl logs `pod-name`
 
 kubectl exec -it `pod-name` -- sh
 

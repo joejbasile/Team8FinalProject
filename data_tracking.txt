@@ -1,0 +1,62 @@
+replicas: 3
+    resources:
+        requests:
+        memory: "20Mi"
+        cpu: "1"
+        limits:
+        memory: "200Mi"
+        cpu: "1"
+1 minutes, 4 seconds, 732 milliseconds
+Max percent of all memory used at an instant: 0.37435716198336694
+1 minutes, 4 seconds, 223 milliseconds
+Max percent of all memory used at an instant: 0.3743256599672379
+1 minutes, 4 seconds, 360 milliseconds
+Max percent of all memory used at an instant: 0.3743246755292339
+
+replicas: 3
+    resources:
+        requests:
+        memory: "1000Mi"
+        cpu: "1"
+        limits:
+        memory: "2000Mi"
+        cpu: "1"
+54 seconds, 620 milliseconds
+Max percent of all memory used at an instant: 0.23930343473800506
+55 seconds, 548 milliseconds
+Max percent of all memory used at an instant: 0.23929381707702022
+53 seconds, 372 milliseconds
+Max percent of all memory used at an instant: 0.23929431029040404
+
+replicas: 3
+    resources:
+        requests:
+        memory: "100Mi"
+        cpu: "0.5"
+        limits:
+        memory: "200Mi"
+        cpu: "0.5"
+2 minutes, 8 seconds, 214 milliseconds
+Max percent of all memory used at an instant: 0.23930343473800506
+2 minutes, 7 seconds, 413 milliseconds
+Max percent of all memory used at an instant: 0.23929381707702022
+2 minutes, 7 seconds, 240 milliseconds
+Max percent of all memory used at an instant: 0.23929431029040404
+
+replicas: 2
+    resources:
+        requests:
+        memory: "100Mi"
+        cpu: "2"
+        limits:
+        memory: "200Mi"
+        cpu: "2"
+1 minutes, 38 seconds, 662 milliseconds
+Max percent of all memory used at an instant: 0.42257001323084675
+1 minutes, 38 seconds, 795 milliseconds
+Max percent of all memory used at an instant: 0.37353023405997980
+
+1 minutes, 40 seconds, 564 milliseconds
+Max percent of all memory used at an instant: 0.37304982831401210
+1 minutes, 40 seconds, 916 milliseconds
+Max percent of all memory used at an instant: 0.29925143334173390
