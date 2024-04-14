@@ -16,7 +16,7 @@ docker push jjbasile/team8
 
 kubectl get node minikube -o jsonpath='{.status.capacity}'
 
-minikube start --memory 6144 --cpus 6
+minikube start --memory 12288 --cpus 6
 
 OR
 
