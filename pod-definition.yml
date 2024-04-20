@@ -5,7 +5,7 @@ metadata:
   labels:
     app: team8
 spec:
-  replicas: 6
+  replicas: 3
   selector:
     matchLabels:
       app: team8
@@ -22,7 +22,7 @@ spec:
         resources:
           requests:
             memory: "150Mi"
-            cpu: "1"
+            cpu: "2"
           limits:
             memory: "150Mi"
-            cpu: "1"
+            cpu: "2"
